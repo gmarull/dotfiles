@@ -66,6 +66,7 @@ colorscheme solarized
 " specific filetype settings
 autocmd FileType make setlocal noexpandtab
 autocmd FileType html,css setlocal softtabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.md set filetype=markdown
 
 " key bindings
 let mapleader = ","
