@@ -13,9 +13,9 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'steffanc/cscopemaps.vim'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 call vundle#end()
 filetype plugin indent on
@@ -35,7 +35,7 @@ set expandtab
 " behaviour
 set hidden
 set backspace=indent,eol,start
-set textwidth=79
+set textwidth=80
 set undofile
 set undodir=~/.vimundo
 set timeoutlen=1000
@@ -66,6 +66,7 @@ colorscheme solarized
 " specific filetype settings
 autocmd FileType make setlocal noexpandtab
 autocmd FileType html,css setlocal softtabstop=2 shiftwidth=2
+autocmd FileType tex setlocal softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " key bindings
@@ -73,33 +74,22 @@ let mapleader = ","
 
 map <silent> <leader><space> :nohl<CR>
 
-nnoremap <leader>T :enew<CR>
-nnoremap <leader>l :bn<CR>
-nnoremap <leader>h :bp<CR>
-nnoremap <leader>bl :ls<CR>
-
-nnoremap <leader>st :SyntasticToggleMode<CR>
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 " plugin: airline
 set laststatus=2
-let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-
-" plugin: syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" plugin: ycm
-let g:ycm_add_preview_to_completeopt=0
-let g:ycm_confirm_extra_conf=0
-set completeopt-=preview
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_mode_map = {
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V',
+  \ '' : 'V',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
 
