@@ -50,6 +50,8 @@ set nowrap
 set wildmenu
 set cursorline
 set number
+set listchars=trail:.
+set list
 
 " searching
 set hlsearch
@@ -71,8 +73,10 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " key bindings
 let mapleader = ","
-
+"" disable highlights
 map <silent> <leader><space> :nohl<CR>
+"" remove trailing spaces
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " plugin: airline
 set laststatus=2
