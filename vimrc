@@ -25,12 +25,11 @@ set exrc
 set secure
 
 " formatting
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
 set autoindent
 set smarttab
-set expandtab
 
 " behaviour
 set hidden
@@ -50,8 +49,6 @@ set nowrap
 set wildmenu
 set cursorline
 set number
-set listchars=trail:.
-set list
 
 " searching
 set hlsearch
@@ -66,9 +63,8 @@ set background=dark
 colorscheme solarized
 
 " specific filetype settings
-autocmd FileType make setlocal noexpandtab
-autocmd FileType html,css setlocal softtabstop=2 shiftwidth=2
-autocmd FileType tex setlocal softtabstop=2 shiftwidth=2
+autocmd FileType html,css setlocal expandtab softtabstop=2 shiftwidth=2
+autocmd FileType tex setlocal expandtab softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " key bindings
