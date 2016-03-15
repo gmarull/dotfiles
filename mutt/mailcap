@@ -1,0 +1,5 @@
+text/html		; /usr/bin/w3m -I %{charset} -T text/html	; copiousoutput
+application/pdf		; /usr/bin/evince %s				; copiousoutput
+image/*			; /usr/bin/eog %s				; copiousoutput
+audio/*			; /usr/bin/totem %s				; copiousoutput
+video/*			; /usr/bin/totem %s				; copiousoutput

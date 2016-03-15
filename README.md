@@ -1,3 +1,3 @@
 # My dotfiles
 
-These are my Vim and Tmux dotfiles.
+These are my dotfiles.
