@@ -14,8 +14,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'steffanc/cscopemaps.vim'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 call vundle#end()
 filetype plugin indent on
@@ -63,8 +61,8 @@ set background=dark
 colorscheme solarized
 
 " specific filetype settings
-autocmd FileType html,css setlocal expandtab softtabstop=2 shiftwidth=2
-autocmd FileType tex setlocal expandtab softtabstop=2 shiftwidth=2
+autocmd FileType html,css,tex setlocal expandtab softtabstop=2 shiftwidth=2
+autocmd FileType python setlocal expandtab softtabstop=4 shiftwidth=4
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " key bindings
