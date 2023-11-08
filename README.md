@@ -19,9 +19,6 @@ vim +PluginInstall +qall
 
 and you are done.
 
-Notes: in order to make the `solarized` color palette work you will need to set
-it up to your terminal emulator first.
-
 ## tmux
 
 Create a symlink of `tmux.conf` to `~/.tmux.conf`.
@@ -31,3 +28,11 @@ Create a symlink of `tmux.conf` to `~/.tmux.conf`.
 ## zsh
 
 Install [Antigen](https://github.com/zsh-users/antigen) to `~/.antigen.sh`.
+
+## GNOME terminal
+
+Import profiles by running:
+
+```bash
+dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
+```
