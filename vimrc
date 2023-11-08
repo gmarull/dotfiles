@@ -51,7 +51,6 @@ set number
 " searching
 set hlsearch
 set incsearch
-set showmatch
 set smartcase
 set ignorecase
 
