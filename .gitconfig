@@ -1,0 +1,12 @@
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[rebase]
+	autosquash = true
+[user]
+	name = Gerard Marull-Paretas
+	email = gerard@teslabs.com
+	signingKey = gerard@teslabs.com
