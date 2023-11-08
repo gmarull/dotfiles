@@ -4,8 +4,7 @@ These are my dotfiles.
 
 ## vim
 
-Create a symlink of `vimrc` to `~/.vimrc`. Then, install the [Vundle] plugin
-manager:
+Install the [Vundle] plugin manager:
 
 ```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -18,10 +17,6 @@ vim +PluginInstall +qall
 ```
 
 and you are done.
-
-## tmux
-
-Create a symlink of `tmux.conf` to `~/.tmux.conf`.
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
 
