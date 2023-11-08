@@ -24,9 +24,7 @@ it up to your terminal emulator first.
 
 ## tmux
 
-Create a symlink of `tmux.conf` to `~/.tmux.conf`. Then, edit this config file
-and uncomment the status bar lines (close to the end of the file) depending on
-if you are running Linux or OS X.
+Create a symlink of `tmux.conf` to `~/.tmux.conf`.
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
 
