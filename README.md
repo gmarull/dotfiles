@@ -22,7 +22,13 @@ and you are done.
 
 ## zsh
 
-Install [Antigen](https://github.com/zsh-users/antigen) to `~/.antigen.sh`.
+First install external plugins:
+
+```sh
+mkdir ~/.zsh
+cd ~/.zsh
+git clone --depth=1 git@github.com:zsh-users/zsh-syntax-highlighting.git
+```
 
 ## GNOME terminal
 
