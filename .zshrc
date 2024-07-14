@@ -29,5 +29,17 @@ zstyle ':completion:*:*:*:*:*' menu select
 # git@github.com:zsh-users/zsh-syntax-highlighting.git
 source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
+# aliases
+
+alias ga="git add"
+alias gst="git status"
+alias gco="git checkout"
+alias gd="git diff"
+alias gdca="git diff --cached"
+alias gc="git commit --verbose"
+alias gl="git pull"
+alias gp="git push"
+alias gpf="git push --force"
+
 # prompt
 eval "$(starship init zsh)"
