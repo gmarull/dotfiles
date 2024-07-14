@@ -4,7 +4,8 @@ These are my dotfiles.
 
 ## Starship
 
-Install https://starship.rs (prompt)
+Install https://starship.rs (prompt) and FiraCode Nerd Font from
+https://www.nerdfonts.com/font-downloads.
 
 ## vim
 
