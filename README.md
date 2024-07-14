@@ -2,6 +2,10 @@
 
 These are my dotfiles.
 
+## Starship
+
+Install https://starship.rs (prompt)
+
 ## vim
 
 Install plugins:
