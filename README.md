@@ -4,21 +4,23 @@ These are my dotfiles.
 
 ## vim
 
-Install the [Vundle] plugin manager:
+Install plugins:
 
-```bash
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+mkdir -p ~/.vim/pack/gmarull/start
+cd ~/.vim/pack/gmarull/start
+git clone --depth=1 git@github.com:vim-airline/vim-airline.git
+git clone --depth=1 git@github.com:preservim/nerdcommenter.git
+git clone --depth=1 git@github.com:editorconfig/editorconfig-vim.git
 ```
 
-After this is done, run:
+Install theme:
 
-```bash
-vim +PluginInstall +qall
 ```
-
-and you are done.
-
-[Vundle]:http://github.com/VundleVim/Vundle.vim
+mkdir -p ~/.vim/pack/gmarull/opt
+cd ~/.vim/pack/gmarull/opt
+git clone --depth=1 git@github.com:altercation/vim-colors-solarized.git
+```
 
 ## zsh
 

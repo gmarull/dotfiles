@@ -4,20 +4,6 @@
 " vim is not vi
 set nocompatible
 
-" vundle plugin manager
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
-Plugin 'scrooloose/nerdcommenter'
-
-call vundle#end()
-filetype plugin indent on
-
 " allow local .vimrc
 set exrc
 set secure
@@ -41,7 +27,6 @@ set ttimeoutlen=0
 " appearance
 set encoding=utf-8
 set termencoding=utf-8
-set term=screen-256color
 set colorcolumn=80
 set nowrap
 set wildmenu
