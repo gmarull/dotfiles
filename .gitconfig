@@ -1,3 +1,6 @@
+# Gerard Marull-Paretas <gerard@teslabs.com>
+# SPDX-License-Identifier: MIT
+
 [commit]
 	gpgsign = true
 [core]

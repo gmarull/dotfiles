@@ -1,5 +1,5 @@
-# .zshrc
-# Gerard Marull-Paretas <gerardmarull@gmail.com>
+# Gerard Marull-Paretas <gerard@teslabs.com>
+# SPDX-License-Identifier: MIT
 
 # history browsing
 setopt APPEND_HISTORY

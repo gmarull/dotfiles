@@ -1,5 +1,6 @@
 #!/bin/sh
 # Gerard Marull-Paretas <gerard@teslabs.com>
+# SPDX-License-Identifier: MIT
 
 set -e
 
