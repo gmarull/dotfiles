@@ -1,52 +1,25 @@
 # My dotfiles
 
-These are my dotfiles.
+This repository contains basic configuration files for:
 
-## Starship
+- Vim
+- Zsh
+- Tmux
+- Starship
+- Git
+- Terminal apps (GNOME, macOS)
 
-Install https://starship.rs (prompt) and FiraCode Nerd Font from
-https://www.nerdfonts.com/font-downloads.
-
-## vim
-
-Install plugins:
-
-```
-mkdir -p ~/.vim/pack/gmarull/start
-cd ~/.vim/pack/gmarull/start
-git clone --depth=1 git@github.com:vim-airline/vim-airline.git
-git clone --depth=1 git@github.com:preservim/nerdcommenter.git
-git clone --depth=1 git@github.com:editorconfig/editorconfig-vim.git
-```
-
-Install theme:
-
-```
-mkdir -p ~/.vim/pack/gmarull/opt
-cd ~/.vim/pack/gmarull/opt
-git clone --depth=1 git@github.com:altercation/vim-colors-solarized.git
-```
-
-## zsh
-
-First install external plugins:
+They should work fine on both Linux and macOS environments. One all applications
+are installed on the system, dotfiles can be applied by running:
 
 ```sh
-mkdir ~/.zsh
-cd ~/.zsh
-git clone --depth=1 git@github.com:zsh-users/zsh-syntax-highlighting.git
+./setup.sh
 ```
 
-## GNOME terminal
+Some extra manual steps may be necessary, see below:
 
-Import profiles by running:
-
-```bash
-dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
-```
-
-## macOS
-
-### GPG
-
-Follow https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e
+- Install FiraCode Nerd Font from https://www.nerdfonts.com/font-downloads.
+- If using macOS terminal, import `macos-terminal-profile.terminal`.
+- If using macOS, Follow steps in
+  https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e to setup
+  GPG successfully.
