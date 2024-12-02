@@ -11,6 +11,8 @@
 	autosquash = true
 [push]
 	autoSetupRemote = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
 [user]
 	name = Gerard Marull-Paretas
 	email = gerard@teslabs.com
