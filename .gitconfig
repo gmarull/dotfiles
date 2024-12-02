@@ -9,6 +9,8 @@
 	defaultBranch = main
 [rebase]
 	autosquash = true
+[push]
+	autoSetupRemote = true
 [user]
 	name = Gerard Marull-Paretas
 	email = gerard@teslabs.com
